@@ -4,16 +4,16 @@ Introducing Flaskr
 Table of Contents
 ==================
 
-   * Introduction
-   * Creating the Folders
-   * Database Schema
-   * Application Setup Code
-   * Creating the Database
-   * Request Database Connections
-   * The Views Functions
-   * Templates
-   * Adding Style
-   * Testing the Application
+* Introduction
+* Creating the Folders
+* Database Schema
+* Application Setup Code
+* Creating the Database
+* Request Database Connections
+* The Views Functions
+* Templates
+* Adding Style
+* Testing the Application
 
 We will call our blogging application flaskr, but feel free to choose your own
 less Web-2.0-ish name ;)  Essentially, we want it to do the following things:
