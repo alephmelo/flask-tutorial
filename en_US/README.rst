@@ -43,9 +43,31 @@ application::
 The ``flaskr`` folder is not a Python package, but just something where we
 drop our files. Later on, we will put our database schema as well as main
 module into this folder. It is done in the following way. The files inside
-the `static` folder are available to users of the application via HTTP.
+the *static* folder are available to users of the application via HTTP.
 This is the place where CSS and Javascript files go.  Inside the
-`templates` folder, Flask will look for `Jinja2`_ templates.  The
+*templates* folder, Flask will look for `Jinja2`_ templates.  The
 templates you create later on in the tutorial will go in this directory.
 
 .. _Jinja2: http://jinja.pocoo.org/
+
+Database Schema
+=======================
+
+First, we want to create the database schema. Only a single table is needed
+for this application and we only want to support SQLite, so creating the
+database schema is quite easy. Just put the following contents into a file
+named *schema.sql* in the just created *flaskr* folder:
+
+.. sourcecode:: sql
+
+    drop table if exists entries;
+    create table entries (
+      id integer primary key autoincrement,
+      title text not null,
+      'text' text not null
+    );
+
+This schema consists of a single table called ``entries``. Each row in
+this table has an ``id``, a ``title``, and a ``text``.  The ``id`` is an
+automatically incrementing integer and a primary key, the other two are
+strings that must not be null.
