@@ -9,7 +9,7 @@ features everything you need to get started.  We will use Flask and SQLite
 as a database (which comes out of the box with Python) so there is nothing
 else you need.
 
-If you want the full source code in advance or for comparison, check out
+If you want to download the full source code in advance or for comparison, check out
 the `example source`_.
 
 .. _example source:
